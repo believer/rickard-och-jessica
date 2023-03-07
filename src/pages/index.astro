@@ -1,81 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout>
+  <main class="py-8 md:py-20 max-w-2xl mx-5 md:mx-auto font-light">
+    <h1
+      class="font-cursive text-8xl text-center bg-gradient-to-r bg-clip-text from-cyan-500 to-pink-400 text-transparent mb-10"
+    >
+      Rickard & Jessica
+    </h1>
+    <section class="space-y-6">
+      <p>
+        Elit quas nesciunt deleniti neque illo Quo quisquam laborum id a
+        blanditiis Autem consequatur illum eaque modi alias dolorum corrupti
+        nihil Repellat quae laudantium non magnam facilis! Doloremque
+        praesentium vel
+      </p>
+      <p>
+        Dolor ab expedita aut quos officiis? Laborum quidem inventore laudantium
+        officiis autem! Molestias sequi accusantium harum a obcaecati facilis.
+        Beatae ad maiores vitae itaque amet libero! Inventore enim laudantium
+        qui
+      </p>
+      <dl
+        class="grid grid-cols-[max-content,1fr,max-content] gap-x-4 gap-y-2 items-baseline"
+      >
+        <dt class="font-bold">Plats</dt>
+        <hr class="border-dashed border-gray-400" />
+        <dd class="text-right">
+          <a
+            class="underline decoration-dashed decoration-pink-600"
+            href="https://rosenhill.nu/"
+            target="_blank"
+            rel="noopener noreferrer">Rosenhill, Ekerö</a
+          >
+        </dd>
+        <dt class="font-bold">Datum</dt>
+        <hr class="border-dashed border-gray-400" />
+        <dd class="text-right">
+          <time datetime="2023-08-25">2023-08-25</time>
+        </dd>
+      </dl>
+    </section>
+    <h2 class="text-4xl font-cursive mt-10">Tider</h2>
+    <dl
+      class="grid grid-cols-[max-content,1fr,max-content] gap-x-4 gap-y-2 items-baseline mt-6"
+    >
+      <dt class="font-bold">Bröllop</dt>
+      <hr class="border-dashed border-gray-400" />
+      <dd class="text-right">
+        <time datetime="2023-08-25T15:00">15:00</time>
+      </dd>
+    </dl>
+  </main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
