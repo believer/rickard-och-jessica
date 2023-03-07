@@ -29,28 +29,38 @@ import Layout from '../layouts/Layout.astro'
         <hr class="border-dashed border-gray-400" />
         <dd class="text-right">
           <a
-            class="underline decoration-dashed decoration-pink-600"
+            class="underline decoration-dashed decoration-pink-600 text-pink-600"
             href="https://rosenhill.nu/"
             target="_blank"
-            rel="noopener noreferrer">Rosenhill, Ekerö</a
+            rel="noopener noreferrer"
           >
+            Rosenhill
+          </a>,
+          <a
+            class="underline decoration-dashed decoration-pink-600 text-pink-600"
+            href="https://www.google.com/maps/place/Rosenhills+Tr%C3%A4dg%C3%A5rd+och+Musteri/@59.2949802,17.7144241,17z/data=!3m1!4b1!4m9!3m8!1s0x465f748c916e19d7:0xda26f9f80fc77b0b!5m2!4m1!1i2!8m2!3d59.2949802!4d17.7166128!16s%2Fg%2F113fx_5yj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ekerö
+          </a>
+          <dt class="font-bold">Datum</dt>
+          <hr class="border-dashed border-gray-400" />
+          <dd class="text-right">
+            <time datetime="2023-08-25">2023-08-25</time>
+          </dd>
         </dd>
-        <dt class="font-bold">Datum</dt>
+      </dl>
+      <h2 class="text-4xl font-cursive mt-8 md:mt-10">Tider</h2>
+      <dl
+        class="grid grid-cols-[max-content,1fr,max-content] gap-x-4 gap-y-2 items-baseline mt-6"
+      >
+        <dt class="font-bold">Bröllop</dt>
         <hr class="border-dashed border-gray-400" />
         <dd class="text-right">
-          <time datetime="2023-08-25">2023-08-25</time>
+          <time datetime="2023-08-25T15:00">15:00</time>
         </dd>
       </dl>
     </section>
-    <h2 class="text-4xl font-cursive mt-8 md:mt-10">Tider</h2>
-    <dl
-      class="grid grid-cols-[max-content,1fr,max-content] gap-x-4 gap-y-2 items-baseline mt-6"
-    >
-      <dt class="font-bold">Bröllop</dt>
-      <hr class="border-dashed border-gray-400" />
-      <dd class="text-right">
-        <time datetime="2023-08-25T15:00">15:00</time>
-      </dd>
-    </dl>
   </main>
 </Layout>
