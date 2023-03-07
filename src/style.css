@@ -4,9 +4,9 @@
 
 @layer base {
   @font-face {
-    font-family: "Adelio";
+    font-family: 'Adelio';
     font-weight: 400;
     font-display: swap;
-    src: url("adelio-darmanto.otf") format("opentype");
+    src: url('/adelio-darmanto.otf') format('opentype');
   }
 }
