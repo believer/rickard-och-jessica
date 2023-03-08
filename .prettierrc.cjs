@@ -7,7 +7,6 @@ module.exports = {
   trailingComma: 'es5',
   bracketSpacing: true,
   bracketSameLine: false,
-  htmlWhitespaceSensitivity: 'ignore',
   plugins: [require.resolve('prettier-plugin-astro')],
   overrides: [
     {
