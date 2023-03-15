@@ -1,5 +1,5 @@
 import Image from "next/image";
-import rickJess from "./rickjess.jpeg";
+import rickJess from "./rickjess.jpg";
 
 const times = [
   { title: "Välkomna!", time: "15:30" },
@@ -26,6 +26,7 @@ export default function Home() {
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 items-stretch h-screen">
       <Image
+        placeholder="blur"
         className="md:h-full md:object-cover md:object-[30%,50%]"
         src={rickJess}
         alt="Rickard och Jessica håller handen och tittar glatt på varandra."
