@@ -12,12 +12,12 @@ const times = [
 const toastmadames = [
   {
     name: "Fanny B",
-    email: "Fannybaa@gmail.com",
+    email: "fannybaa@gmail.com",
     phone: "0709266262",
   },
   {
     name: "Josefin L",
-    email: "Josefin.linusson@jagareforbundet.se",
+    email: "josefin.linusson@jagareforbundet.se",
     phone: "0734346147",
   },
 ];
