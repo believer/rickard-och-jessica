@@ -156,6 +156,31 @@ export default function Home() {
             ))}
           </ul>
           <OSA />
+          <h2 className="text-4xl font-cursive mt-8 md:mt-12">FAQ</h2>
+          <div>
+            <details className="mt-4">
+              <summary className="cursor-pointer font-semibold">
+                Vill ni ha presenter?
+              </summary>
+              <p className="mt-2">
+                Vi vill träffa er och ha en trevlig kväll tillsammans! Vi har
+                därför valt att inte ha några presenter.
+              </p>
+              <p className="mt-2">
+                Om ni ändå vill ge oss något så kan ni göra det genom att skänka
+                till en framtida bröllopsresa. Ni kan göra det genom att swisha
+                till{" "}
+                <a
+                  className="underline decoration-dashed decoration-pink-600 text-pink-600"
+                  href="#contact"
+                >
+                  brudparet
+                </a>{" "}
+                eller genom att betala in på 9273-257 851 7 (ICA Banken).{" "}
+                <span className="text-red-500">♥</span>
+              </p>
+            </details>
+          </div>
           <h2 className="text-4xl font-cursive mt-8 md:mt-12" id="contact">
             Kontakt
           </h2>
