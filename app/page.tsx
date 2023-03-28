@@ -155,7 +155,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <OSA />
           <h2 className="text-4xl font-cursive mt-8 md:mt-12">FAQ</h2>
           <div>
             <details className="mt-4">
@@ -181,6 +180,7 @@ export default function Home() {
               </p>
             </details>
           </div>
+          <OSA />
           <h2 className="text-4xl font-cursive mt-8 md:mt-12" id="contact">
             Kontakt
           </h2>

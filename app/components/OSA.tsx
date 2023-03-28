@@ -87,6 +87,42 @@ export function OSA() {
               placeholder="Allergi / matpreferenser"
             />
           </div>
+          <div>
+            <h3 className="font-semibold block mb-1">
+              Vi funderar på att hyra buss till festen
+            </h3>
+            <p>Skulle ni vara intresserade av att åka med?</p>
+            <fieldset className="flex gap-2 mt-2">
+              <input
+                className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
+                defaultChecked
+                type="radio"
+                name="bus"
+                id="bus-yes"
+                required
+                value="yes"
+              />
+              <label htmlFor="bus-yes">Ja</label>
+              <input
+                className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
+                type="radio"
+                name="bus"
+                id="bus-no"
+                required
+                value="no"
+              />
+              <label htmlFor="bus-no">Nej</label>
+            </fieldset>
+          </div>
+          <label htmlFor="misc" className="font-semibold block mb-2">
+            Frågor och funderingar
+          </label>
+          <textarea
+            className="w-full border border-slate-400 rounded-md px-4 py-2 outline-none transition-all ring-white focus:ring-pink-600 ring-offset-white ring-offset-2 focus:ring-2"
+            rows={4}
+            name="misc"
+            id="misc"
+          />
           <button
             className="bg-pink-600 w-full py-2 rounded-md text-white font-semibold ring-2 focus:ring-pink-600 ring-offset-2 ring-white transition-all outline-none"
             type="submit"

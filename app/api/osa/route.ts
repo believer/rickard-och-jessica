@@ -12,8 +12,14 @@ export async function POST(request: Request) {
   }
 
   const template = `<strong>Namn:</strong> ${data.name}<br />
-  <strong>Antal personer:</strong> ${data.numberOfPeople}<br />
-  <strong>Allergi / matpreferenser:</strong> ${data.food}<br />
+<strong>Antal personer:</strong> ${data.numberOfPeople}<br />
+<strong>Allergi / matpreferenser:</strong> ${data.food}<br />
+<strong>Buss:</strong> ${data.bus}
+<br /><br />
+<strong>Övrigt</strong><br />
+<p>
+${data.misc}
+</p>
 `;
 
   await sendgrid.send({
