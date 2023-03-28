@@ -27,7 +27,7 @@ export function OSA() {
     <>
       <h2 className="text-4xl font-cursive mt-8 md:mt-10">OSA</h2>
       {submitted ? (
-        <p className="mt-6">
+        <p className="mt-6 bg-green-100 border border-green-400 rounded-md text-center p-5">
           Wohoo, nu blir det fest! <span className="text-red-500">♥</span>
         </p>
       ) : (
