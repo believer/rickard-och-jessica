@@ -1,5 +1,6 @@
 import Image from "next/image";
 import rickJess from "./rickjess.jpg";
+import { OSA } from "./components/OSA";
 
 const times = [
   { title: "Välkomna!", time: "15:30" },
@@ -20,7 +21,20 @@ const toastmadames = [
     email: "josefin.linusson@jagareforbundet.se",
     phone: "0734346147",
   },
-];
+] as const;
+
+const contacts = [
+  {
+    name: "Rickard",
+    email: "rickard@fastmail.se",
+    phone: "0721834008",
+  },
+  {
+    name: "Jessica",
+    email: "jessica.djurberg@gmail.com",
+    phone: "0704228085",
+  },
+] as const;
 
 export default function Home() {
   return (
@@ -46,7 +60,23 @@ export default function Home() {
             Den här sidan kommmer uppdateras fortlöpande med all information ni
             kan behöva.
           </p>
-          <p className="mt-4 font-semibold">OSA senast 31 maj 2023</p>
+          <p className="mt-4">
+            <span className="font-semibold">OSA senast 31 maj 2023</span> genom{" "}
+            <a
+              href="#osa"
+              className="underline decoration-dashed decoration-pink-600 text-pink-600"
+            >
+              formuläret
+            </a>{" "}
+            nedan eller genom att{" "}
+            <a
+              href="#contact"
+              className="underline decoration-dashed decoration-pink-600 text-pink-600"
+            >
+              kontakta brudparet
+            </a>
+            .
+          </p>
           <ul className="mt-8">
             <li className="grid grid-cols-[max-content,1fr,max-content] items-baseline gap-4">
               <span className="font-bold">Plats</span>
@@ -122,6 +152,36 @@ export default function Home() {
                 <span className="text-right">
                   <time dateTime={`2023-08-25T${time.time}`}>{time.time}</time>
                 </span>
+              </li>
+            ))}
+          </ul>
+          <OSA />
+          <h2 className="text-4xl font-cursive mt-8 md:mt-12" id="contact">
+            Kontakt
+          </h2>
+          <p className="mt-2">Har du frågor eller funderingar? Kontakta oss!</p>
+          <ul className="mt-6 grid grid-cols-2">
+            {contacts.map((contact) => (
+              <li key={contact.name} className="flex flex-col items-center">
+                <div className="font-semibold">{contact.name}</div>
+                <ul className="flex gap-2">
+                  <li>
+                    <a
+                      className="underline decoration-dashed decoration-pink-600 text-pink-600"
+                      href={`mailto:${contact.email}`}
+                    >
+                      E-mail
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="underline decoration-dashed decoration-pink-600 text-pink-600"
+                      href={`tel:${contact.phone}`}
+                    >
+                      Telefon
+                    </a>
+                  </li>
+                </ul>
               </li>
             ))}
           </ul>
