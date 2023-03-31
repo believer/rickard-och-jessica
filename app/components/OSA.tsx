@@ -87,31 +87,37 @@ export function OSA() {
               placeholder="Allergi / matpreferenser"
             />
           </div>
-          <div>
-            <h3 className="font-semibold block mb-1">
-              Vi funderar på att hyra buss till festen
-            </h3>
-            <p>Skulle ni vara intresserade av att åka med?</p>
-            <fieldset className="flex gap-2 mt-2">
-              <input
-                className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
-                defaultChecked
-                type="radio"
-                name="bus"
-                id="bus-yes"
-                required
-                value="yes"
-              />
-              <label htmlFor="bus-yes">Ja</label>
-              <input
-                className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
-                type="radio"
-                name="bus"
-                id="bus-no"
-                required
-                value="no"
-              />
-              <label htmlFor="bus-no">Nej</label>
+          <div className="md:flex gap-10 items-center">
+            <div>
+              <h3 className="font-semibold block mb-1">
+                Vi funderar på att hyra buss till festen
+              </h3>
+              <p>Skulle ni vara intresserade av att åka med?</p>
+            </div>
+            <fieldset className="flex gap-4 mt-2">
+              <div className="flex gap-2">
+                <input
+                  className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
+                  defaultChecked
+                  type="radio"
+                  name="bus"
+                  id="bus-yes"
+                  required
+                  value="yes"
+                />
+                <label htmlFor="bus-yes">Ja</label>
+              </div>
+              <div className="flex gap-2">
+                <input
+                  className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
+                  type="radio"
+                  name="bus"
+                  id="bus-no"
+                  required
+                  value="no"
+                />
+                <label htmlFor="bus-no">Nej</label>
+              </div>
             </fieldset>
           </div>
           <label htmlFor="misc" className="font-semibold block mb-2">
