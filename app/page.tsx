@@ -18,7 +18,7 @@ const toastmadames = [
   },
   {
     name: "Josefin L",
-    email: "josefin.linusson@jagareforbundet.se",
+    email: "josefin.linusson@gmail.com",
     phone: "0734346147",
   },
 ] as const;
