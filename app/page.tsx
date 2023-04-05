@@ -161,7 +161,7 @@ export default function Home() {
               <summary className="cursor-pointer font-semibold focus:outline-none ring-2 rounded ring-offset-2 ring-offset-white ring-white transition-all focus:ring-pink-400">
                 Vill ni ha presenter?
               </summary>
-              <div className="p-4 bg-slate-50 border border-slate-300 rounded mt-2 space-y-22">
+              <div className="p-4 bg-slate-50 border border-slate-300 rounded mt-2 space-y-2">
                 <p>
                   Vi vill träffa er och ha en trevlig kväll tillsammans! Vi har
                   därför valt att inte ha några presenter.
@@ -210,6 +210,51 @@ export default function Home() {
                   Alla som inte har blivit bjudna som ett par på
                   inbjudningskuvertet får ta med en plus ett.{" "}
                   <span className="text-red-500">♥</span>
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary className="cursor-pointer font-semibold focus:outline-none ring-2 rounded ring-offset-2 ring-offset-white ring-white transition-all focus:ring-pink-400">
+                Hur tar man sig ut/hem?
+              </summary>
+              <div className="p-4 bg-slate-50 border border-slate-300 rounded mt-2 space-y-2">
+                <p>
+                  Närmsta busshållplatsen för Rosenhill är{" "}
+                  <strong className="font-semibold">Nyckelby (Ekerö)</strong>{" "}
+                  vid korsningen med ICA-butiken – som är 800 meter från
+                  Rosenhill. Vilket är ungefär 10 – 15 minuter med någorlunda
+                  raska steg.
+                </p>
+                <p>
+                  Bussen till Nyckelby går från Brommaplan. Antingen direktbuss
+                  311, 312 eller 309 (långsammare) eller med bussbyte från annan
+                  buss (kolla{" "}
+                  <a
+                    href="https://sl.se/"
+                    className="underline decoration-dashed decoration-pink-600 text-pink-600"
+                  >
+                    sl.se
+                  </a>
+                  ).
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary className="cursor-pointer font-semibold focus:outline-none ring-2 rounded ring-offset-2 ring-offset-white ring-white transition-all focus:ring-pink-400">
+                Rekommenderat boende
+              </summary>
+              <div className="p-4 bg-slate-50 border border-slate-300 rounded mt-2 space-y-2">
+                <p>
+                  Det finns ingen möjlighet att bo kvar på plats. Om man vill bo
+                  på hotell efter så rekommenderar vi{" "}
+                  <a
+                    href="https://www.scandichotels.se/hotell/sverige/stockholm/scandic-alvik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-dashed decoration-pink-600 text-pink-600"
+                  >
+                    Scandic Alvik
+                  </a>
                 </p>
               </div>
             </details>
