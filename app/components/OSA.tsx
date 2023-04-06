@@ -48,7 +48,7 @@ export function OSA() {
           />
           <div>
             <label htmlFor="name" className="font-semibold block mb-2">
-              Namn
+              Namn <span className="text-pink-600 text-sm">*</span>
             </label>
             <input
               className="w-full border border-slate-400 rounded-md px-4 py-2 outline-none transition-all ring-white focus:ring-pink-600 ring-offset-white ring-offset-2 focus:ring-2"
@@ -64,7 +64,7 @@ export function OSA() {
               htmlFor="numberOfPeople"
               className="font-semibold block mb-2"
             >
-              Antal personer
+              Antal personer <span className="text-pink-600 text-sm">*</span>
             </label>
             <input
               className="w-full border border-slate-400 rounded-md px-4 py-2 outline-none transition-all ring-white focus:ring-pink-600 ring-offset-white ring-offset-2 focus:ring-2"
