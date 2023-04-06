@@ -67,9 +67,12 @@ export function OSA() {
               Antal personer <span className="text-pink-600 text-sm">*</span>
             </label>
             <input
-              className="w-full border border-slate-400 rounded-md px-4 py-2 outline-none transition-all ring-white focus:ring-pink-600 ring-offset-white ring-offset-2 focus:ring-2"
+              className="w-full border border-slate-400 rounded-md px-4 py-2 outline-none transition-all ring-white focus:ring-pink-600 ring-offset-white ring-offset-2 focus:ring-2 invalid:border-red-500"
+              defaultValue={1}
               name="numberOfPeople"
               placeholder="Antal personer"
+              max={2}
+              min={0}
               required
               id="numberOfPeople"
               type="number"
