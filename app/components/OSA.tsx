@@ -98,7 +98,7 @@ export function OSA() {
               <p>Skulle ni vara intresserade av att åka med?</p>
             </div>
             <fieldset className="flex gap-4 mt-2">
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <input
                   className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
                   defaultChecked
@@ -110,7 +110,7 @@ export function OSA() {
                 />
                 <label htmlFor="bus-yes">Ja</label>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <input
                   className="accent-pink-600 ring-2 outline-none rounded-full ring-offset-2 focus:ring-pink-600 ring-white"
                   type="radio"
