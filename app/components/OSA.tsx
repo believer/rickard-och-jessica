@@ -93,7 +93,7 @@ export function OSA() {
           <div className="md:flex gap-10 items-center">
             <div>
               <h3 className="font-semibold block mb-1">
-                Vi funderar på att hyra buss till festen
+                Vi funderar på att hyra buss till och från festen
               </h3>
               <p>Skulle ni vara intresserade av att åka med?</p>
             </div>
