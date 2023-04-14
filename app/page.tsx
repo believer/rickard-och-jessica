@@ -45,6 +45,8 @@ export default function Home() {
         className="md:h-full md:object-cover md:object-[30%,50%]"
         src={rickJess}
         alt="Rickard och Jessica håller handen och tittar glatt på varandra."
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
         title="Foto: Sofia Söderlund"
       />
       <div className="pt-8 pb-[calc(env(safe-area-inset-bottom)_+_32px)] md:py-20 px-5 md:px-10 lg:px-20 md:mx-auto font-light md:overflow-scroll">
