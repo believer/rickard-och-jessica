@@ -91,12 +91,15 @@ export function OSA() {
               placeholder="Allergi / matpreferenser"
             />
           </div>
-          <div className="md:flex gap-10 items-center">
+          <div className="md:flex gap-16 items-center">
             <div>
               <h3 className="font-semibold block mb-1">
                 Vi funderar på att hyra buss till och från festen
               </h3>
-              <p>Skulle ni vara intresserade av att åka med?</p>
+              <p>
+                Skulle ni vara intresserade av att åka med? Tanken är att den
+                ska gå till/från Alvik.
+              </p>
             </div>
             <fieldset className="flex gap-4 mt-2">
               <div className="flex gap-2 items-center">
