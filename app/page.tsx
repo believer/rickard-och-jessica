@@ -64,7 +64,7 @@ export default function Home() {
             kan behöva.
           </p>
           <p className="mt-4">
-            <span className="font-semibold">OSA senast 31 maj 2023</span> genom{" "}
+            <span className="font-semibold">OSA senast <time dateTime="2023-07-16">16 juli 2023</time></span> genom{" "}
             <a
               href="#osa"
               className="underline decoration-dashed decoration-pink-600 text-pink-600"
