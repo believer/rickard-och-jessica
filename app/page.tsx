@@ -63,6 +63,23 @@ export default function Home() {
             Den här sidan kommmer uppdateras fortlöpande med all information ni
             kan behöva.
           </p>
+          <p className="mt-4">
+            <span className="font-semibold">OSA senast 31 maj 2023</span> genom{" "}
+            <a
+              href="#osa"
+              className="underline decoration-dashed decoration-pink-600 text-pink-600"
+            >
+              formuläret
+            </a>{" "}
+            nedan eller genom att{" "}
+            <a
+              href="#contact"
+              className="underline decoration-dashed decoration-pink-600 text-pink-600"
+            >
+              kontakta brudparet
+            </a>
+            .
+          </p>
           <ul className="mt-8">
             <li className="grid grid-cols-[max-content,1fr,max-content] items-baseline gap-4">
               <span className="font-bold">Plats</span>
