@@ -1,41 +1,41 @@
-import Image from "next/image";
-import rickJess from "./rickjess.jpg";
-import { OSA } from "./components/OSA";
-import { FAQ } from "./components/FAQ";
+import Image from 'next/image'
+import rickJess from './rickjess.jpg'
+import { FAQ } from './components/FAQ'
 
 const times = [
-  { title: "Välkomna!", time: "15:30" },
-  { title: "Vigsel", time: "16:00" },
-  { title: "Mingel", time: "17:00" },
-  { title: "Middag", time: "18:00" },
-  { title: "Fest", time: "21:00" },
-];
+  { title: 'Buss går från Alvik (för de som vill åka)', time: '14:30' },
+  { title: 'Välkomna!', time: '15:30' },
+  { title: 'Vigsel', time: '16:00' },
+  { title: 'Mingel', time: '17:00' },
+  { title: 'Middag', time: '18:00' },
+  { title: 'Fest', time: '21:00' },
+]
 
 const toastmadames = [
   {
-    name: "Fanny B",
-    email: "fannybaa@gmail.com",
-    phone: "0709266262",
+    name: 'Fanny B',
+    email: 'fannybaa@gmail.com',
+    phone: '0709266262',
   },
   {
-    name: "Josefin L",
-    email: "josefin.linusson@gmail.com",
-    phone: "0734346147",
+    name: 'Josefin L',
+    email: 'josefin.linusson@gmail.com',
+    phone: '0734346147',
   },
-] as const;
+] as const
 
 const contacts = [
   {
-    name: "Rickard",
-    email: "rickard@fastmail.se",
-    phone: "0721834008",
+    name: 'Rickard',
+    email: 'rickard@fastmail.se',
+    phone: '0721834008',
   },
   {
-    name: "Jessica",
-    email: "jessica.djurberg@gmail.com",
-    phone: "0704228085",
+    name: 'Jessica',
+    email: 'jessica.djurberg@gmail.com',
+    phone: '0704228085',
   },
-] as const;
+] as const
 
 export default function Home() {
   return (
@@ -63,23 +63,6 @@ export default function Home() {
             Den här sidan kommmer uppdateras fortlöpande med all information ni
             kan behöva.
           </p>
-          <p className="mt-4">
-            <span className="font-semibold">OSA senast <time dateTime="2023-07-16">16 juli 2023</time></span> genom{" "}
-            <a
-              href="#osa"
-              className="underline decoration-dashed decoration-pink-600 text-pink-600"
-            >
-              formuläret
-            </a>{" "}
-            nedan eller genom att{" "}
-            <a
-              href="#contact"
-              className="underline decoration-dashed decoration-pink-600 text-pink-600"
-            >
-              kontakta brudparet
-            </a>
-            .
-          </p>
           <ul className="mt-8">
             <li className="grid grid-cols-[max-content,1fr,max-content] items-baseline gap-4">
               <span className="font-bold">Plats</span>
@@ -93,14 +76,14 @@ export default function Home() {
                 >
                   Rosenhill
                 </a>
-                ,{" "}
+                ,{' '}
                 <a
                   className="underline decoration-dashed decoration-pink-600 text-pink-600"
                   href="https://www.google.com/maps/place/Rosenhills+Tr%C3%A4dg%C3%A5rd+och+Musteri/@59.2949802,17.7144241,17z/data=!3m1!4b1!4m9!3m8!1s0x465f748c916e19d7:0xda26f9f80fc77b0b!5m2!4m1!1i2!8m2!3d59.2949802!4d17.7166128!16s%2Fg%2F113fx_5yj"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Ekerö
+                  Ekerö (Karta)
                 </a>
               </span>
             </li>
@@ -158,7 +141,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <OSA />
           <FAQ />
           <h2 className="text-4xl font-cursive mt-8 md:mt-12" id="contact">
             Kontakt
@@ -203,5 +185,5 @@ export default function Home() {
         </section>
       </div>
     </main>
-  );
+  )
 }
