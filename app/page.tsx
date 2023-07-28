@@ -91,7 +91,11 @@ export default function Home() {
               <span className="font-bold">Datum</span>
               <hr className="border-dashed border-gray-400" />
               <span className="text-right">
-                <time dateTime="2023-08-25">2023-08-25</time>
+                <time dateTime="2023-08-25">
+                  {new Intl.DateTimeFormat('sv-SE', {
+                    dateStyle: 'full',
+                  }).format(new Date('2023-08-25'))}
+                </time>
               </span>
             </li>
           </ul>
