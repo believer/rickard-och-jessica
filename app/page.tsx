@@ -3,7 +3,11 @@ import rickJess from './rickjess.jpg'
 import { FAQ } from './components/FAQ'
 
 const times = [
-  { title: 'Buss går från Alvik (för de som vill åka)', time: '14:30' },
+  {
+    title: 'Buss går från Alvik',
+    time: '14:30',
+    subtitle: '(för de som vill)',
+  },
   { title: 'Välkomna!', time: '15:30' },
   { title: 'Vigsel', time: '16:00' },
   { title: 'Mingel', time: '17:00' },
@@ -137,7 +141,14 @@ export default function Home() {
                 className="grid grid-cols-[max-content,1fr,max-content] items-baseline gap-4"
                 key={time.title}
               >
-                <span className="font-bold">{time.title}</span>
+                <span className="font-bold flex gap-2 items-center">
+                  {time.title}
+                  {time.subtitle ? (
+                    <span className="text-xs font-normal text-slate-500">
+                      {time.subtitle}
+                    </span>
+                  ) : null}
+                </span>
                 <hr className="border-dashed border-gray-400" />
                 <span className="text-right">
                   <time dateTime={`2023-08-25T${time.time}`}>{time.time}</time>
